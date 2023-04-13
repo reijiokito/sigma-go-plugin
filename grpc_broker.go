@@ -8,13 +8,12 @@ import (
 	"crypto/tls"
 	"errors"
 	"fmt"
+	"github.com/reijiokito/sigma-go-plugin/internal/plugin"
 	"log"
 	"net"
 	"sync"
 	"sync/atomic"
 	"time"
-
-	"github.com/hashicorp/go-plugin/internal/plugin"
 
 	"github.com/oklog/run"
 	"google.golang.org/grpc"
