@@ -359,6 +359,10 @@ func NewClient(config *ClientConfig) (c *Client) {
 	return
 }
 
+func GetManagedClient() []*Client {
+	return managedClients
+}
+
 // Client returns the protocol client for this connection.
 //
 // Subsequent calls to this will return the same client.
