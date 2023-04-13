@@ -1,4 +1,4 @@
-module github.com/sigma/sigma-go-plugin
+module github.com/reijiokito/sigma-go-plugin
 
 go 1.20
 
