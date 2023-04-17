@@ -1,4 +1,4 @@
-package sigma
+package sigma_go_plugin
 
 import (
 	"github.com/nats-io/nats.go"

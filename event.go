@@ -1,8 +1,9 @@
-package sigma
+package sigma_go_plugin
 
 import (
 	"fmt"
 	"github.com/nats-io/nats.go"
+	"github.com/reijiokito/sigma-go-plugin/proto/generate"
 	"google.golang.org/protobuf/proto"
 	"log"
 	"reflect"
@@ -27,7 +28,7 @@ func RegisterEvent[R proto.Message](sender string, channel string, handler Event
 	event = ref.Interface().(R)
 
 	stream.executors[subject] = func(m *nats.Msg, eventID int64) {
-		var msg Event
+		var msg generate.Event
 		if err := proto.Unmarshal(m.Data, &msg); err != nil {
 			log.Print("Register unmarshal error response data:", err.Error())
 			return

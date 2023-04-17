@@ -1,8 +1,9 @@
-package sigma
+package sigma_go_plugin
 
 import (
 	"fmt"
 	"github.com/nats-io/nats.go"
+	"github.com/reijiokito/sigma-go-plugin/proto/generate"
 	"log"
 	"strings"
 )
@@ -17,7 +18,7 @@ func Authenticate(config AuthenticationConfig) {
 	//We can authenticate plugin here with a manager
 }
 
-func Init(name string, c *Configuration) {
+func Init(name string, c *generate.Configuration) {
 	module = name
 	var err error
 	var nats_ []string

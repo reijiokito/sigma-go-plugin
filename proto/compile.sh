@@ -1,3 +1,3 @@
-protoc -I=. --go_out=../sigma sigma.proto
-protoc -I=. --go_out=../sigma config.proto
+protoc -I=. --go_out=./generate sigma.proto
+protoc -I=. --go_out=./generate config.proto
 

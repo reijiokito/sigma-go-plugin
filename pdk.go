@@ -1,4 +1,6 @@
-package sigma
+package sigma_go_plugin
+
+import "github.com/reijiokito/sigma-go-plugin/proto/generate"
 
 type InitPlugin interface {
 	Access(pdk *PDK)
@@ -6,7 +8,7 @@ type InitPlugin interface {
 
 type PDK struct {
 	Client        string
-	Configuration Configuration
+	Configuration generate.Configuration
 }
 
 func Access(pdk *PDK) {
