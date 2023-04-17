@@ -3,7 +3,9 @@ package main
 import (
 	"flag"
 	"github.com/reijiokito/plugin-manager/sigma"
-	"sigma-plugin-a/event"
+	"sigma-plugin-b/event"
+	"sigma-plugin-b/proto"
+	"time"
 )
 
 const PLUGIN_CODE = "plugin_b"
@@ -28,5 +30,13 @@ func main() {
 	sigma.RegisterEvent("plugin_a", "hello", event.HelloHandler)
 	sigma.RegisterEvent("plugin_b", "handshake", event.HandShakeHandler)
 
+	for i := 0; i < 10; i++ {
+		sigma.PostEvent("handshake", &proto.Hello{
+			Name: "Cong",
+		})
+		time.Sleep(time.Second * 1)
+	}
+
 	sigma.Start()
+
 }

@@ -29,5 +29,4 @@ func main() {
 	sigma.RegisterEvent("plugin_b", "handshake", event.HandShakeHandler)
 
 	sigma.Start()
-
 }

@@ -3,7 +3,7 @@ package event
 import (
 	"fmt"
 	"github.com/reijiokito/plugin-manager/sigma"
-	"sigma-plugin-a/proto"
+	"sigma-plugin-b/proto"
 
 	"log"
 )
