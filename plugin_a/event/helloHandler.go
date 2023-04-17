@@ -8,6 +8,6 @@ import (
 	"log"
 )
 
-func HelloHandler(ctx *sigma.Context, message *proto.AccountCreated) {
+func HelloHandler(ctx *sigma.Context, message *proto.Hello) {
 	log.Println(fmt.Sprintf("Plugin A: Receive event Hello: %v", message))
 }

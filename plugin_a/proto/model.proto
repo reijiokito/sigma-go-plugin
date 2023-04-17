@@ -6,3 +6,7 @@ option  go_package = "./;proto";
 message Hello {
   string Name = 1;
 }
+
+message Handshake {
+  string Name = 1;
+}

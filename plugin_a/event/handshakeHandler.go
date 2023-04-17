@@ -8,6 +8,6 @@ import (
 	"log"
 )
 
-func HandShakeHandler(ctx *sigma.Context, message *proto.AccountCreated) {
+func HandShakeHandler(ctx *sigma.Context, message *proto.Handshake) {
 	log.Println(fmt.Sprintf("Receive event Handshake: %v", message))
 }
