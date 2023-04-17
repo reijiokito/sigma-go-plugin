@@ -1,0 +1,1 @@
+** Sigma Go Plugin
