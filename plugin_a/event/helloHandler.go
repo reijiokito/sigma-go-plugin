@@ -9,5 +9,5 @@ import (
 )
 
 func HelloHandler(ctx *sigma.Context, message *proto.AccountCreated) {
-	log.Println(fmt.Sprintf("Receive event Hello: %v", message))
+	log.Println(fmt.Sprintf("Plugin A: Receive event Hello: %v", message))
 }

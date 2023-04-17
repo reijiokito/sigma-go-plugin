@@ -6,7 +6,7 @@ import (
 	"sigma-plugin-a/event"
 )
 
-const PLUGIN_CODE = "PLUGIN_A"
+const PLUGIN_CODE = "plugin_b"
 
 func main() {
 	natsUrl := flag.String("nats_url", "127.0.0.1", "Nats URL")
@@ -25,7 +25,8 @@ func main() {
 	sigma.Init(PLUGIN_CODE, &config)
 	defer sigma.Release()
 
-	sigma.RegisterEvent("PLUGIN_B", "hello", event.HelloHandler)
-	
+	sigma.RegisterEvent("plugin_a", "hello", event.HelloHandler)
+	sigma.RegisterEvent("plugin_b", "handshake", event.HandShakeHandler)
+
 	sigma.Start()
 }
