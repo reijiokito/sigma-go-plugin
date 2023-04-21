@@ -3,7 +3,6 @@ package server
 import (
 	"github.com/reijiokito/sigma-go-plugin/client"
 	"github.com/reijiokito/sigma-go-plugin/entities"
-	"github.com/reijiokito/sigma-go-plugin/node"
 )
 
 type Error string
@@ -78,18 +77,6 @@ type StepConsumerData struct {
 }
 
 func (rh *rpcHandler) StepConsumer(in StepConsumerData, out *StepData) error {
-	return rh.Step(StepData{
-		EventId: in.EventId,
-		Data:    in.Data,
-	}, out)
-}
-
-type StepMemoryStatsData struct {
-	EventId int
-	Data    node.MemoryStats
-}
-
-func (rh *rpcHandler) StepMemoryStats(in StepMemoryStatsData, out *StepData) error {
 	return rh.Step(StepData{
 		EventId: in.EventId,
 		Data:    in.Data,
