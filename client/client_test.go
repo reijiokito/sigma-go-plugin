@@ -3,8 +3,8 @@ package client
 import (
 	"testing"
 
-	"github.com/Sigma/go-pdk/bridge"
-	"github.com/Sigma/go-pdk/entities"
+	"github.com/reijiokito/sigma-go-plugin/bridge"
+	"github.com/reijiokito/sigma-go-plugin/entities"
 	"github.com/stretchr/testify/assert"
 )
 

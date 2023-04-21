@@ -1,9 +1,9 @@
 package server
 
 import (
-	"github.com/Sigma/go-pdk/client"
-	"github.com/Sigma/go-pdk/entities"
-	"github.com/Sigma/go-pdk/node"
+	"github.com/reijiokito/sigma-go-plugin/client"
+	"github.com/reijiokito/sigma-go-plugin/entities"
+	"github.com/reijiokito/sigma-go-plugin/node"
 )
 
 type Error string

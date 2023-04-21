@@ -4,7 +4,7 @@ Manipulation of the request to the Service.
 package request
 
 import (
-	"github.com/Sigma/go-pdk/bridge"
+	"github.com/reijiokito/sigma-go-plugin/bridge"
 )
 
 // Holds this module's functions.  Accessible as `sigma.ServiceRequest`

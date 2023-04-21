@@ -3,7 +3,6 @@ package server
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/Sigma/go-pdk"
 	"log"
 	"time"
 )

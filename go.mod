@@ -1,4 +1,4 @@
-module github.com/Sigma/go-pdk
+module github.com/reijiokito/sigma-go-plugin
 
 go 1.13
 

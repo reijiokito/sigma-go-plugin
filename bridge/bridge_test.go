@@ -3,7 +3,7 @@ package bridge
 import (
 	"testing"
 
-	"github.com/Sigma/go-pdk/entities"
+	"github.com/reijiokito/sigma-go-plugin/entities"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -16,14 +16,14 @@ For example, to get the client's IP address, you'd use `sigma.Client.GetIp()`.
 package pdk
 
 import (
-	"github.com/Sigma/go-pdk/client"
-	"github.com/Sigma/go-pdk/ctx"
-	"github.com/Sigma/go-pdk/log"
-	"github.com/Sigma/go-pdk/request"
-	"github.com/Sigma/go-pdk/response"
-	"github.com/Sigma/go-pdk/service"
-	service_request "github.com/Sigma/go-pdk/service/request"
-	service_response "github.com/Sigma/go-pdk/service/response"
+	"github.com/reijiokito/sigma-go-plugin/client"
+	"github.com/reijiokito/sigma-go-plugin/ctx"
+	"github.com/reijiokito/sigma-go-plugin/log"
+	"github.com/reijiokito/sigma-go-plugin/request"
+	"github.com/reijiokito/sigma-go-plugin/response"
+	"github.com/reijiokito/sigma-go-plugin/service"
+	service_request "github.com/reijiokito/sigma-go-plugin/service/request"
+	service_response "github.com/reijiokito/sigma-go-plugin/service/response"
 )
 
 // PDK go pdk module

@@ -2,7 +2,6 @@ package server
 
 import (
 	"fmt"
-	"github.com/Sigma/go-pdk"
 	"time"
 )
 

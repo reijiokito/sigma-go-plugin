@@ -4,7 +4,7 @@ Write to log file.
 package log
 
 import (
-	"github.com/Sigma/go-pdk/bridge"
+	"github.com/reijiokito/sigma-go-plugin/bridge"
 )
 
 // Holds this module's functions.  Accessible as `sigma.Log`

@@ -3,7 +3,7 @@ package log
 import (
 	"testing"
 
-	"github.com/Sigma/go-pdk/bridge"
+	"github.com/reijiokito/sigma-go-plugin/bridge"
 	"github.com/stretchr/testify/assert"
 )
 

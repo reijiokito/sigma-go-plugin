@@ -12,7 +12,7 @@ before sending it back to the client.
 package response
 
 import (
-	"github.com/Sigma/go-pdk/bridge"
+	"github.com/reijiokito/sigma-go-plugin/bridge"
 )
 
 // Holds this module's functions.  Accessible as `sigma.Response`

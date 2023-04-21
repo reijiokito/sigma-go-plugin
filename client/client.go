@@ -9,8 +9,8 @@ package client
 import (
 	"fmt"
 
-	"github.com/Sigma/go-pdk/bridge"
-	"github.com/Sigma/go-pdk/entities"
+	"github.com/reijiokito/sigma-go-plugin/bridge"
+	"github.com/reijiokito/sigma-go-plugin/entities"
 )
 
 // Holds this module's functions.  Accessible as `sigma.Client`.

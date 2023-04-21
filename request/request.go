@@ -6,7 +6,7 @@ A set of functions to retrieve information about the incoming requests made by c
 package request
 
 import (
-	"github.com/Sigma/go-pdk/bridge"
+	"github.com/reijiokito/sigma-go-plugin/bridge"
 )
 
 // Holds this module's functions.  Accessible as `sigma.Request`
